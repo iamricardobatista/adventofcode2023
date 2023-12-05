@@ -5,6 +5,7 @@ edition = "2021"
 
 [dependencies]
 tokio = { version = "1.0.0", features = ["full"] }
+regex = "1.10.2"
 
 [dev-dependencies]
 cucumber = "0.20.1"

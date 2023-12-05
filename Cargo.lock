@@ -319,6 +319,7 @@ name = "day_1"
 version = "0.1.0"
 dependencies = [
  "cucumber",
+ "regex",
  "tokio",
 ]
 

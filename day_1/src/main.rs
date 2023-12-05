@@ -1,6 +1,6 @@
 use std::{env, fs::read_to_string};
 
-use day_1::{sum, CalibrationLines};
+use day_1::{sum, sum_in_full, CalibrationLines};
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -10,8 +10,13 @@ fn main() {
         .map(String::from)
         .collect();
 
-    print!(
+    println!(
         "The sum of all calibration values is: {:?}",
         sum(&calibration_lines)
+    );
+
+    println!(
+        "The sum of all calibration in full values is: {:?}",
+        sum_in_full(&calibration_lines)
     );
 }
